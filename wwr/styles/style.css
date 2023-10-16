@@ -17,11 +17,13 @@ header {
 
 /* Ensuring the hero container takes the full width */
 #hero {
-    width: 100%;
-    overflow: hidden;
-    position: relative; /* Positioning context for the child elements */
-    background-color: #f2f2f2; /* Sample background color, can be adjusted */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* This will center the child elements horizontally */
+    justify-content: center; /* This will center the child elements vertically */
+    height: 100vh; /* This assumes you want the hero section to take up the full height of the viewport */
 }
+
 
 
 #hero-img {
@@ -32,16 +34,12 @@ header {
 
 /* Styling the hero message without overlaying the image */
 #hero-msg {
-    text-align: center;
     color: white;
-    background-color: rgba(0, 0, 0, 0.8); /* Optional, to make the text more visible if the page background is light */
-    padding: 20px 0;
-    margin-top: 20px; /* Adjust to your preference */
+    text-align: center;
 
     /* Adding text shadow for better legibility against any background */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-
 
 .home-title {
     font-size: 2.5em; /* Sample size, adjust accordingly */
