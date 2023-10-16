@@ -14,6 +14,9 @@ header {
     background-color: rgba(20, 30, 13, 0.85); /* Slight opacity adjustment for better visibility */
     padding: 10px 0; /* Some spacing for a better look */
 }
+#hero-msg {
+    text-align: center;
+}
 
 nav a {
     display: inline-block; /* To provide padding */
