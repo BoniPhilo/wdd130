@@ -14,6 +14,11 @@ header {
     background-color: rgba(20, 30, 13, 0.85); /* Slight opacity adjustment for better visibility */
     padding: 10px 0; /* Some spacing for a better look */
 }
+#hero-img {
+    display: block;   /* This removes any default spacing below the image */
+    width: 100%;      /* This will make the image take up the full width of its container */
+    height: auto;     /* Maintains the aspect ratio of the image */
+}
 
 /* Styling for h1 and h4 tags within #hero-msg */
 #hero-msg h1, #hero-msg h4 {
@@ -21,21 +26,6 @@ header {
     padding: 10px; /* Adds some padding */
     color: #333;
 }
-/* Ensuring the container takes the full width */
-#hero {
-    width: 100%;
-    overflow: hidden;  /* This ensures nothing spills out of the container */
-}
-
-#hero-box {
-    width: 100%;
-}
-
-/* Setting the image to stretch across its container */
-#hero-img {
-    display: block;   /* This removes any default spacing below the image */
-    width: 100%;      /* This will make the image take up the full width of its container */
-    height: auto;     /* Maintains the aspect ratio of the image */
 
 
 nav a {
@@ -118,7 +108,3 @@ footer p {
     color: #ffffff;
 }
 
-/* New styles for added visual appeal */
-body {
-    line-height: 1.5; /* For better readability of text */
-}
