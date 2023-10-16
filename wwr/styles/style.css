@@ -14,8 +14,12 @@ header {
     background-color: rgba(20, 30, 13, 0.85); /* Slight opacity adjustment for better visibility */
     padding: 10px 0; /* Some spacing for a better look */
 }
-#hero-msg {
-    text-align: center;
+
+/* Styling for h1 and h4 tags within #hero-msg */
+#hero-msg h1, #hero-msg h4 {
+    margin: 0; /* Removes default margin */
+    padding: 10px; /* Adds some padding */
+    color: #333;
 }
 
 nav a {
