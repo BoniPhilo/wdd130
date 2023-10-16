@@ -30,19 +30,17 @@ header {
     height: auto;
 }
 
-/* Centering and styling the hero message without a box */
+/* Styling the hero message without overlaying the image */
 #hero-msg {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Centering technique */
     text-align: center;
-    color: white; /* Assuming the hero image is darker. Adjust if necessary. */
-    
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8); /* Optional, to make the text more visible if the page background is light */
+    padding: 20px 0;
+    margin-top: 20px; /* Adjust to your preference */
+
     /* Adding text shadow for better legibility against any background */
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
-
 
 
 .home-title {
