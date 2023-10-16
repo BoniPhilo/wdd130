@@ -24,13 +24,11 @@ header {
     height: 100vh; /* This assumes you want the hero section to take up the full height of the viewport */
 }
 
-
-
-#hero-img {
+/*#hero-img {
     display: block;
     width: 100%;
     height: auto;
-}
+}*/
 
 /* Styling the hero message without overlaying the image */
 #hero-msg {
