@@ -1,77 +1,101 @@
 body {
-    background-color: #f2f2f2; /* light gray for a subtle background */
+    background-color: #f7f8fa; /* Slightly off-white for a cleaner look */
+    font-family: 'Arial', sans-serif; /* Using a standard font for better readability */
+    margin: 0;
+    padding: 0;
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto; /* Centers the content on large monitors */
 }
 
 header {
-    background-color: rgba(20, 30, 13, .7);
+    background-color: rgba(20, 30, 13, 0.85); /* Slight opacity adjustment for better visibility */
+    padding: 10px 0; /* Some spacing for a better look */
 }
 
 nav a {
+    display: inline-block; /* To provide padding */
+    padding: 10px 15px; /* Spacing around nav items */
     text-align: center;
-    color: #7a7a7a; /* medium gray for contrast on light background */
+    color: #f1f1f1; /* Slightly off-white for a cleaner look */
     text-decoration: none;
 }
 
 nav a:hover {
     background-color: black;
-    color: #d9c2a3; /* beige for contrast on black */
+    color: #d9c2a3; /* beige for better visibility on black */
+    border-radius: 5px; /* Added for subtle rounding of corners */
 }
 
 .home-title {
-    color: #333333; /* dark gray for strong visibility on light backgrounds */
+    color: #333333; /* Dark gray for clear visibility */
+    font-size: 1.8em; /* Slightly increased size for prominence */
 }
 
 h4 {
-    color: #555555; /* slightly lighter than dark gray for subheadings */
+    color: #777777; /* Adjusted shade for improved visibility */
+    font-size: 1.4em; /* Size adjusted for hierarchy */
 }
 
 .button-box, main section {
     text-align: center;
+    margin-bottom: 20px; /* Added for better spacing between sections */
 }
 
 .icon {
     width: 80px;
+    margin-top: 10px; /* Spacing for better layout */
 }
 
 #background {
     height: 725px;
-    background-color: #dfe4ea; /* a light shade of blue for serene look */
+    background-color: #e5edf2; /* Adjusted for a more soothing blue */
 }
 
 .msg {
-    background-color: #f9f9f9; /* a very light gray to distinguish from body */
+    background-color: #f9f9f9;
+    padding: 20px; /* Padding added for spacing */
 }
 
 footer {
-    background-color: #333333; /* dark gray for footer to ground the page */
+    background-color: #2a2a2a; /* Slightly adjusted shade for a modern look */
+    padding: 15px 0; /* Spacing for better content separation */
 }
 
 footer a {
-    color: #d9c2a3; /* beige color for contrast on dark footer */
+    color: #d9c2a3;
     text-decoration: none;
+    margin: 0 10px; /* Added for spacing between footer links */
 }
 
 footer a:hover {
-    color: #ffffff; /* white for hover effect in footer */
+    color: #ffffff;
     text-decoration: underline;
 }
 
 footer p {
     font-size: 1.2em;
-}
-
-#content {
-    max-width: 1600px;
-    margin: 0 auto;
+    color: #b0b0b0; /* Adjusted for a better contrast on the dark footer */
 }
 
 .book, .join {
-    background-color: #6c757d; /* steel gray for button backgrounds */
+    display: inline-block; /* To provide padding */
+    padding: 10px 20px; /* Bigger clickable area */
+    background-color: #6c757d;
     text-decoration: none;
-    color: #ffffff; /* white text on colored buttons */
+    color: #ffffff;
+    border-radius: 5px; /* Rounding of corners for a softer look */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
 }
 
 .book:hover, .join:hover {
-    background-color: #5a6268; /* slightly darker shade for hover effect */
+    background-color: #5a6268;
     color: #ffffff;
+}
+
+/* New styles for added visual appeal */
+body {
+    line-height: 1.5; /* For better readability of text */
 }
