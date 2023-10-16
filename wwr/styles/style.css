@@ -1,0 +1,77 @@
+body {
+    background-color: #f2f2f2; /* light gray for a subtle background */
+}
+
+header {
+    background-color: rgba(20, 30, 13, .7);
+}
+
+nav a {
+    text-align: center;
+    color: #7a7a7a; /* medium gray for contrast on light background */
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: black;
+    color: #d9c2a3; /* beige for contrast on black */
+}
+
+.home-title {
+    color: #333333; /* dark gray for strong visibility on light backgrounds */
+}
+
+h4 {
+    color: #555555; /* slightly lighter than dark gray for subheadings */
+}
+
+.button-box, main section {
+    text-align: center;
+}
+
+.icon {
+    width: 80px;
+}
+
+#background {
+    height: 725px;
+    background-color: #dfe4ea; /* a light shade of blue for serene look */
+}
+
+.msg {
+    background-color: #f9f9f9; /* a very light gray to distinguish from body */
+}
+
+footer {
+    background-color: #333333; /* dark gray for footer to ground the page */
+}
+
+footer a {
+    color: #d9c2a3; /* beige color for contrast on dark footer */
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #ffffff; /* white for hover effect in footer */
+    text-decoration: underline;
+}
+
+footer p {
+    font-size: 1.2em;
+}
+
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.book, .join {
+    background-color: #6c757d; /* steel gray for button backgrounds */
+    text-decoration: none;
+    color: #ffffff; /* white text on colored buttons */
+}
+
+.book:hover, .join:hover {
+    background-color: #5a6268; /* slightly darker shade for hover effect */
+    color: #ffffff;
+}
