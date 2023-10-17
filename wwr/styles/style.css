@@ -1,28 +1,30 @@
+/* Making the font available at the top */
+@import url('https://fonts.googleapis.com/css?family=Rock+Salt|Bradley+Hand&display=swap');
+
 body {
-    background-color: #f7f8fa; /* Slightly off-white for a cleaner look */
-    font-family: 'Arial', sans-serif; /* Using a standard font for better readability */
-    margin: 0;
-    padding: 0;
+    background-color: #fcfbfb;
+    font-family: Raleway, Arial, sans-serif; /* Updated font-family */
+    font-size: 22px; /* Updated font-size */
+    margin: 0; /* Simple Reset */
+    padding: 0; /* Simple Reset */
 }
 
 #content {
     max-width: 1600px;
-    margin: 0 auto; /* Centers the content on large monitors */
+    margin: 0 auto;
 }
 
 header {
-    background-color: rgba(20, 30, 13, 0.85); /* Slight opacity adjustment for better visibility */
-    padding: 10px 0; /* Some spacing for a better look */
+    background-color: rgba(20, 30, 13, 0.85);
+    padding: 10px 0;
 }
 
-/* Ensuring the hero container takes the full width */
 #hero {
     width: 100%;
     overflow: hidden;
-    position: relative; /* Positioning context for the child elements */
-    background-color: #f2f2f2; /* Sample background color, can be adjusted */
+    position: relative;
+    background-color: #f2f2f2;
 }
-
 
 #hero-img {
     display: block;
@@ -30,83 +32,79 @@ header {
     height: auto;
 }
 
-/* Centering and styling the hero message without a box */
 #hero-msg {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Centering technique */
+    transform: translate(-50%, -50%);
     text-align: center;
-    color: white; /* Assuming the hero image is darker. Adjust if necessary. */
-    
-    /* Adding text shadow for better legibility against any background */
+    color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
-
-
 .home-title {
-    font-size: 2.5em; /* Sample size, adjust accordingly */
-    margin-bottom: 10px;
+    font-family: 'Rock Salt', 'Bradley Hand', sans-serif; /* Updated font-family */
+    color: #333333;
+    font-size: 2em; /* Updated font-size */
+    margin-top: 10px; /* Adding margin */
 }
 
-
-
 nav a {
-    display: inline-block; /* To provide padding */
-    padding: 10px 15px; /* Spacing around nav items */
+    display: inline-block;
+    padding: 35px; /* Updated padding */
     text-align: center;
-    color: #f1f1f1; /* Slightly off-white for a cleaner look */
+    color: #f1f1f1;
     text-decoration: none;
     transition: all 0.3s;
-
 }
 
 nav a:hover {
     background-color: black;
-    color: #d9c2a3; /* beige for better visibility on black */
-    border-radius: 5px; /* Added for subtle rounding of corners */
-}
-
-.home-title {
-    color: #333333; /* Dark gray for clear visibility */
-    font-size: 1.8em; /* Slightly increased size for prominence */
+    color: #d9c2a3;
+    border-radius: 5px;
 }
 
 h4 {
-    color: #777777; /* Adjusted shade for improved visibility */
-    font-size: 1.4em; /* Size adjusted for hierarchy */
+    color: #777777;
+    font-size: 1.4em;
 }
 
 .button-box, main section {
     text-align: center;
-    margin-bottom: 20px; /* Added for better spacing between sections */
+    margin-bottom: 20px;
 }
 
 .icon {
     width: 80px;
-    margin-top: 10px; /* Spacing for better layout */
+    padding-top: 10px; /* Updated padding */
 }
 
 #background {
     height: 725px;
-    background-color: #e5edf2; /* Adjusted for a more soothing blue */
+    background-color: #e5edf2;
 }
 
 .msg {
     background-color: #f9f9f9;
-    padding: 20px; /* Padding added for spacing */
+    padding: 35px; /* Updated padding */
+    line-height: 1.5em; /* Adjusted line height */
+}
+
+.msg p {
+    font-size: 0.8em; /* Updated font-size */
+    padding-bottom: 15px; /* Updated padding */
 }
 
 footer {
-    background-color: #2a2a2a; /* Slightly adjusted shade for a modern look */
-    padding: 15px 0; /* Spacing for better content separation */
+    background-color: #2a2a2a;
+    padding: 25px 50px; /* Updated padding */
+    margin-top: 200px; /* Updated margin */
 }
 
 footer a {
     color: #d9c2a3;
     text-decoration: none;
-    margin: 0 10px; /* Added for spacing between footer links */
+    margin: 0 10px;
 }
 
 footer a:hover {
@@ -116,17 +114,19 @@ footer a:hover {
 
 footer p {
     font-size: 1.2em;
-    color: #b0b0b0; /* Adjusted for a better contrast on the dark footer */
+    color: #b0b0b0;
 }
 
 .book, .join {
-    display: inline-block; /* To provide padding */
-    padding: 10px 20px; /* Bigger clickable area */
+    display: inline-block;
+    padding: 15px 30px; /* Updated padding */
     background-color: #6c757d;
     text-decoration: none;
     color: #ffffff;
-    border-radius: 5px; /* Rounding of corners for a softer look */
-    transition: background-color 0.3s; /* Smooth transition for hover effect */
+    font-size: 18px; /* Updated font-size */
+    border-radius: 5px; /* Added border-radius */
+    margin-top: 50px; /* Updated margin */
+    transition: background-color 0.3s;
 }
 
 .book:hover, .join:hover {
@@ -134,3 +134,14 @@ footer p {
     color: #ffffff;
 }
 
+.card-img {
+    border: 10px solid #2A3D5A; /* Deep blue color for a modern touch */
+}
+
+main section img {
+    box-sizing: border-box; /* Making sure border is considered in the size */
+}
+
+h2 {
+    margin: 0; /* Simple Reset */
+}
