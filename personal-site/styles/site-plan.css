@@ -123,6 +123,7 @@ nav ul {
 }
 
 nav a {
+  float: left;
   padding: 1em;
   min-width: 120px;
   text-decoration: none;
