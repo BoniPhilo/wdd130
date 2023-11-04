@@ -109,6 +109,7 @@ p.colored {
 }
 
 nav {
+  float: left;
   background-color: var(--nav-background-color);
   line-height: 3em;
   text-align: center;
@@ -123,7 +124,7 @@ nav ul {
 }
 
 nav a {
-  float: left;
+  
   padding: 1em;
   min-width: 120px;
   text-decoration: none;
