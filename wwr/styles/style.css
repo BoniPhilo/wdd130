@@ -424,4 +424,30 @@ button:hover {
 .contact-form button:hover {
     background-color: #45a049;
 }
+/* Add this section to your existing CSS for Contact Page */
 
+.contact-details {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.get-in-touch {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+}
+
+.get-in-touch h2 {
+    color: #4A4E69;
+}
+
+.get-in-touch p {
+    color: #6f7364;
+}
