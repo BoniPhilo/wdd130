@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Creative Accordion Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+
+        .accordion-container {
+            width: 60%;
+            margin: 20px auto;
+        }
+
+        .accordion {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            text-align: left;
+            border: none;
+            outline: none;
+            transition: 0.4s;
+        }
+
+        .active, .accordion:hover {
+            background-color: #ccc;
+        }
+
+        .panel {
+            padding: 0 18px;
+            background-color: white;
+            display: none;
+            overflow: hidden;
+        }
+
+        .icon {
+            float: right;
+            transition: 0.3s;
+        }
+
+        .accordion:after {
+            content: '\002B'; /* Unicode character for "plus" sign (+) */
+            font-size: 13px;
+            color: #777;
+            float: right;
+            margin-left: 5px;
+        }
+
+        .active:after {
+            content: "\2212"; /* Unicode character for "minus" sign (−) */
+        }
+    </style>
+</head>
+<body>
+
+    <div class="accordion-container">
+        <button class="accordion">Section 1 <span class="icon">&#127793;</span></button>
+        <div class="panel">
+            <p>Welcome to our nature section, where we explore the beauty of the natural world!</p>
+        </div>
+
+        <button class="accordion">Section 2 <span class="icon">&#127752;</span></button>
+        <div class="panel">
+            <p>Discover the secrets of the ocean and the fascinating creatures that inhabit it.</p>
+        </div>
+
+        <button class="accordion">Section 3 <span class="icon">&#127758;</span></button>
+        <div class="panel">
+            <p>Join us on a journey through space, exploring galaxies far beyond our own.</p>
+        </div>
+    </div>
+
+    <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                    panel.style.display = "none";
+                } else {
+                    panel.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+</body>
+</html>
