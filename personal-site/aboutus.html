@@ -3,52 +3,113 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Philiquine Boni</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <title>About Us</title>
     <style>
-        body { font-family: 'Source Sans Pro', sans-serif; color: #353535; }
-        h1, h2, h3 { font-family: 'Playfair Display', serif; }
-        nav, footer { background-color: #3C6E71; }
-        .accent { color: #D9BF77; }
-        /* Additional CSS styling can go here */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: grid;
+            grid-template-rows: auto 1fr auto;
+            grid-template-columns: 100%;
+            height: 100vh;
+        }
+
+        header, footer {
+            background-color: #f2f2f2;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        .active {
+            text-decoration: underline;
+        }
+
+        .about-intro, .about-content, .content-block {
+            padding: 20px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .content-block {
+            margin-bottom: 20px;
+        }
+
+        .logo {
+            width: 50px;
+            height: auto;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+        }
     </style>
 </head>
 <body>
     <header>
-        <nav>
-            <!-- Navigation links -->
-            <a href="index.html">Home</a>
-            <a href="faq.html">FAQ</a>
-            <a href="aboutus.html">About Us</a>
-            <img src="images/logo.png" alt="logo Image">
-        </nav>
+        <div class="header-content">
+            <img src="logo.png" alt="Logo" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
+                    <li><a href="aboutus.html" class="active">About Us</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+    
     <main>
-        <section class="about-header">
-            <img src="images/about-background.jpg" alt="logo Image">
+        <section class="about-intro">
             <h1>About Us</h1>
             <p>Here you will find information about us!</p>
         </section>
-        <section class="about-main">
-            <h2>Discover Philiquine Boni</h2>
-            <p>This page is dedicated to those who wish to delve deeper into who Philiquine Boni is. It's for the creatives, the prospective employers, the friends and family, and the curious minds. Here you can learn about my passions, skills, and experiences.</p>
-            <img src="images/about-philiquine.jpg" alt="logo Image">
-        </section>
-        <section class="additional-info">
-            <h2>Title</h2>
-            <p>You will find my resume and information about me here.</p>
-            <p>Information about location</p>
+        
+        <section class="about-content">
+            <div class="content-block">
+                <h2>Title</h2>
+                <p>You will find my resume and information about me here.</p>
+            </div>
+            <div class="content-block">
+                <h2>Information about location</h2>
+                <!-- Content goes here -->
+            </div>
         </section>
     </main>
-
+    
     <footer>
-        <p>&copy; 2023 by Philiquine Boni</p>
-        <a href="mailto:philiquine@boni.com">Email</a>
-        <a href="https://linkedin.com/in/philiquine-boni">LinkedIn</a>
-        <a href="https://twitter.com/philiquine_boni">Twitter</a>
-        <a href="https://instagram.com/philiquine_boni">Instagram</a>
-        <a href="https://boniphilo.github.io/wdd130/personal-site/site-plan.html#">Site Plan</a>
+        <p>Boni © 2023 Philiquine Boni</p>
+        <div class="footer-links">
+            <a href="contact.html">Contact Us</a>
+            <!-- Other footer links -->
+        </div>
     </footer>
     
+    <script>
+        // Example JavaScript for interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            // Code to run after the document is loaded
+            var navLinks = document
+            'nav a');
+            navLinks.forEach(function(link) {
+                link.addEventListener('click', function(event) {
+                    // Implement the logic for the navigation interaction
+                    // For instance, updating the active class on the clicked item
+                    navLinks.forEach(link => link.classList.remove('active'));
+                    event.target.classList.add('active');
+                });
+            });
+        });
+    </script>
 </body>
 </html>
